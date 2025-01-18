@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog Platform</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+            <div id="logo"><a href="#"><i class="fa-regular fa-p fa-bounce"></i></a> Parmar</div>
+            <a href="#text_editor" class="b">✨Create your Blog</a>
+    </header>
+    <main>
+        <section class="hero"><div class="hero_content">
+            <h1>Publish your passions, your way ☘︎ ݁˖</h1>
+            <h2>Create a unique and beautiful blog easily.</h2>
+            <a href="#text_editor" class="bu btn btn-one">✨Create your Blog</a>
+          </div>
+          <div class="hero_background">
+            <img id="bear" src="./undraw_refreshing-beverage_w8al.svg" alt="hero_background">
+            <!-- <img src="./d.png" id="tag_plate"  alt="hero_background"> -->
+          </div>
+        </section>
+        <section class="description">
+          <div class="desInfo hidden">
+            <h1>Choose the perfect design</h1>
+            <p>Create a beautiful blog that fits your style. Choose from </p> 
+            <p>a selection of easy-to-use templates.</p> 
+          </div>
+        </section>
+        <section id="text_editor" class="text_editor ">
+          <div id="title">
+            <input id="write_title" type="text" placeholder="Title ᯓ➤">
+          </div>
+          <div class="blogging">
+            <h1>BLOGGING</h1>
+          </div>
+          <div class="container ">
+            <div class="options">
+              <!-- Text Format -->
+              <button id="bold" class="option-button format">
+                <i class="fa-solid fa-bold"></i>
+              </button>
+              <button id="italic" class="option-button format">
+                <i class="fa-solid fa-italic"></i>
+              </button>
+              <button id="underline" class="option-button format">
+                <i class="fa-solid fa-underline"></i>
+              </button>
+              <button id="strikethrough" class="option-button format">
+                <i class="fa-solid fa-strikethrough"></i>
+              </button>
+              <button id="superscript" class="option-button script">
+                <i class="fa-solid fa-superscript"></i>
+              </button>
+              <button id="subscript" class="option-button script">
+                <i class="fa-solid fa-subscript"></i>
+              </button>
+      
+              <!-- List -->
+              <button id="insertOrderedList" class="option-button">
+                <div class="fa-solid fa-list-ol"></div>
+              </button>
+              <button id="insertUnorderedList" class="option-button">
+                <i class="fa-solid fa-list"></i>
+              </button>
+      
+              <!-- Undo/Redo -->
+              <button id="undo" class="option-button">
+                <i class="fa-solid fa-rotate-left"></i>
+              </button>
+              <button id="redo" class="option-button">
+                <i class="fa-solid fa-rotate-right"></i>
+              </button>
+      
+              <!-- Link -->
+              <button id="createLink" class="adv-option-button">
+                <i class="fa fa-link"></i>
+              </button>
+              <button id="unlink" class="option-button">
+                <i class="fa fa-unlink"></i>
+              </button>
+      
+              <!-- Alignment -->
+              <button id="justifyLeft" class="option-button align">
+                <i class="fa-solid fa-align-left"></i>
+              </button>
+              <button id="justifyCenter" class="option-button align">
+                <i class="fa-solid fa-align-center"></i>
+              </button>
+              <button id="justifyRight" class="option-button align">
+                <i class="fa-solid fa-align-right"></i>
+              </button>
+              <button id="justifyFull" class="option-button align">
+                <i class="fa-solid fa-align-justify"></i>
+              </button>
+              <button id="indent" class="option-button spacing">
+                <i class="fa-solid fa-indent"></i>
+              </button>
+              <button id="outdent" class="option-button spacing">
+                <i class="fa-solid fa-outdent"></i>
+              </button>
+      
+              <!-- Headings -->
+              <select id="formatBlock" class="adv-option-button">
+                <option value="H1">H1</option>
+                <option value="H2">H2</option>
+                <option value="H3">H3</option>
+                <option value="H4">H4</option>
+                <option value="H5">H5</option>
+                <option value="H6">H6</option>
+              </select>
+      
+              <!-- Font -->
+              <select id="fontName" class="adv-option-button"></select>
+              <select id="fontSize" class="adv-option-button"></select>
+      
+              <!-- Color -->
+              <div class="input-wrapper">
+                <input type="color" id="foreColor" class="adv-option-button" />
+                <label for="foreColor">Font Color</label>
+              </div>
+              <div class="input-wrapper">
+                <input type="color" id="backColor" class="adv-option-button" />
+                <label for="backColor">Highlight Color</label>
+              </div>
+            </div>
+            <div id="text-input" contenteditable="true"></div>
+            <div class="publish_button">
+              <button type="button" id="publish">✦ Publish</button>
+            </div>
+          </div>
+        </section>
+
+        <section id="manage_blog">
+          <h2 id="see_posts">Your Blog Posts: જ⁀➴ ♡</h2>
+          <div id="blog_posts">
+            <div id="no_post" >No Posts 🗑️</div>
+            <!-- <article class="my_blog">
+              <h1>hello world</h1>
+              <div class="date"></div>
+              <div class="my_blog_content"></div>
+              <div class="my_blog_options">
+                <button>Delete</button>
+                <div>Read more</div>
+              </div>
+             </article> -->
+
+             
+          </div>
+        </section>
+
+        <section id="notes_template">
+           <h1>NOTES</h1>
+        </section>
+
+        <section id="note_ideas">
+          <h2>Add Notes:⁀➴</h2>
+          <div class="add_show">
+            <div class="add_notes ">
+              <input type="text" id="note_topic" placeholder="Topic">
+              <textarea name="note" id="note_description" rows="15" cols="28" placeholder="Description..."></textarea>
+              <div class="publish_note">
+                <button type="button" id="note_button">✦ Add Notes</button>
+              </div>
+            </div>
+            <div class="show_notes" id="show_notes">
+              <!-- <article class="my_note">
+                <h1>hello world</h1>
+                <div class="date"></div>
+                <div class="my_blog_content"></div>
+                <div class="my_blog_options">
+                  <button>Delete</button>
+                  <div>Read more</div>
+                </div>
+               </article> -->
+            </div>
+          </div>
+        </section>
+
+        <section id="read_here" >
+          <!-- <div class="your_blog">
+            <h1 id="your_title">GFG</h1>
+            <div id="your_content">akdsfaejiowaf</div>
+          </div> -->
+        </section>
+
+        <section id="world">
+             <div id="world_content">
+              <h1>Join millions of others</h1>
+            <div class="world_text">
+              Whether sharing your expertise, breaking news, or whatever’s on your mind, you’re in good company on Blogger. Sign up to discover why millions of people have published their passions here.
+            </div>
+             </div>
+        </section>
+    </main>
+    <footer>
+       <div>
+        
+        <div>Email: parmarnakul277@gmail.com</div>
+        <div>Phone: +91 7700970086</div>
+        <div>Illustrations by Undraw</div>
+        <div>© 2025 Parmar. All rights reserved.</div>
+       </div>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>
